@@ -23,7 +23,7 @@ class Palindrome {
         System.out.print("In:");
         String s = inp.nextLine();
         //write your code below
-        String palindrome = "";
+        String reverse = "";
         s = s.toLowerCase();
         if (s.contains(" ")) {
             s = s.replace(" ", "");
@@ -54,10 +54,10 @@ class Palindrome {
         }
         
         for (int i = s.length() - 1; i >= 0; i--) {
-            palindrome = palindrome + s.substring(i, i + 1);
+            reverse = reverse + s.substring(i, i + 1);
         }
         System.out.println("");
-        if (s.equals(palindrome)) {
+        if (s.equals(reverse)) {
             System.out.println("true");
         } else {
             System.out.println("false");
