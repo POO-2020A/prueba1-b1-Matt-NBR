@@ -56,7 +56,6 @@ class Palindrome {
         for (int i = s.length() - 1; i >= 0; i--) {
             reverse = reverse + s.substring(i, i + 1);
         }
-        System.out.println("");
         if (s.equals(reverse)) {
             System.out.println("true");
         } else {
